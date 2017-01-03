@@ -16,7 +16,7 @@ public class Validation {
     // Regular expressions used to validate the content of fields
 
     private static final String EMAIL_REGEX = "^[_A-Za-z0-9-\\+]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
-    private static final String PHONE_REGEX = "\\d{3}-\\d{7}";
+    private static final String PHONE_REGEX = "\\d{7}";
     private static final String TEXT_REGEX = "^[A-z]+$";
     private static final String DATE_REGEX ="MM/dd/yyyy";
 
@@ -24,7 +24,7 @@ public class Validation {
     private static final String REQUIRED_MSG = "This field is required";
     private static final String EMAIL_MSG = "Invalid email  XXX@XXX.XXX";
     private static final String TEXT_MSG = "Only alphabets allowed";
-    private static final String PHONE_MSG = "Accepted format ###-#######";
+    private static final String PHONE_MSG = "Accepted format digits #######";
     private static final String DATE_MSG_INVALID = "The date you provided is in an invalid date format.";
     private static final String DATE_MSG_FORMAT = "The date format must be "+DATE_REGEX;
 
