@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SampleAppV2</string>
+    <string name="button_validate">Verify content</string>
+</resources>

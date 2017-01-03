@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/text_name"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:layout_marginTop="17dp"
+            android:id="@+id/text_password"
+            android:layout_below="@+id/text_name"
+            android:layout_alignLeft="@+id/text_name"
+            android:layout_alignStart="@+id/text_name" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:layout_marginTop="22dp"
+            android:id="@+id/text_mail"
+            android:layout_below="@+id/text_password"
+            android:layout_alignLeft="@+id/text_password"
+            android:layout_alignStart="@+id/text_password" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="date"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:id="@+id/text_date"
+            android:layout_below="@+id/text_phone"
+            android:layout_alignLeft="@+id/text_phone"
+            android:layout_alignStart="@+id/text_phone" />
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView4"
+            android:layout_above="@+id/text_password"
+            android:layout_toLeftOf="@+id/text_name"
+            android:layout_toStartOf="@+id/text_name" />
+
+        <TextView
+            android:text="Password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_password"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView5"
+            android:layout_alignBottom="@+id/text_password"
+            android:layout_toLeftOf="@+id/text_password"
+            android:layout_toStartOf="@+id/text_password" />
+
+        <TextView
+            android:text="Email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_mail"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView6"
+            android:layout_above="@+id/text_phone"
+            android:layout_toLeftOf="@+id/text_mail"
+            android:layout_toStartOf="@+id/text_mail" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:ems="10"
+            android:layout_marginTop="25dp"
+            android:id="@+id/text_phone"
+            android:layout_below="@+id/text_mail"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+
+        <TextView
+            android:text="Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_phone"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView7"
+            android:layout_alignBottom="@+id/text_phone"
+            android:layout_toLeftOf="@+id/text_phone"
+            android:layout_toStartOf="@+id/text_phone" />
+
+        <TextView
+            android:text="Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/text_date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/textView8"
+            android:layout_alignBottom="@+id/text_date"
+            android:layout_toLeftOf="@+id/text_date"
+            android:layout_toStartOf="@+id/text_date" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_date"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="42dp"
+            android:id="@+id/button_validate"
+            android:text="@string/button_validate"
+            android:onClick="validateForm" />
+
+    </RelativeLayout>
+</LinearLayout>
